@@ -4,22 +4,23 @@
     "service": "api",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "features": {},
-
-    // Make a list of ports inside the container available locally.
-    "forwardPorts": [5432]
-
-    /* 
-        Set default properties for specific forwarded ports.
-        "portsAttributes": {
-            "3000": {
-                "label": "Application",
-                "onAutoForward": "notify"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "usernamehw.errorlens",
+                "standard.vscode-standard"
+            ],
+            "settings": {
+                "standard.enable": true,
+                "standard.engine": "ts-standard",
+                "editor.formatOnSave": true
             }
-        } 
-    */
-
-    /* 
-        A command string or list of command arguments to run after the container is created.
-        "postCreateCommand": ""
-    */    
+        }
+    },
+    // Make a list of ports inside the container available locally.
+    "forwardPorts": [
+        5432
+    ],
+    "postCreateCommand": "npm install"
 }
