@@ -1,2 +1,2 @@
-# todo-api-ts
-Repository to test my TypeScript knowledge by creating an API.
+# Template Devcontainer TypeScript-Node.
+Base template for projects with TypeScript-Node devcontainer
