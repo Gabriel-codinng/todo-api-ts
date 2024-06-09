@@ -1,5 +1,5 @@
 {
-    "name": "ts-postgre",
+    "name": "template-ts-node",
     "dockerComposeFile": "docker-compose.yml",
     "service": "api",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -7,9 +7,9 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "dbaeumer.vscode-eslint",
                 "usernamehw.errorlens",
-                "standard.vscode-standard"
+                "standard.vscode-standard",
+                "YoavBls.pretty-ts-errors"
             ],
             "settings": {
                 "standard.enable": true,
